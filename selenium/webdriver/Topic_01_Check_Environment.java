@@ -13,6 +13,7 @@ public class Topic_01_Check_Environment {
     public void TC_01_Run_On_Firefox() {
         driver = new FirefoxDriver();
         driver.get("https://www.facebook.com/");
+        driver.manage().window().fullscreen();
         driver.quit();
     }
 
@@ -22,5 +23,5 @@ public class Topic_01_Check_Environment {
         driver.get("https://www.facebook.com/");
         driver.quit();
     }
-    
+
 }
