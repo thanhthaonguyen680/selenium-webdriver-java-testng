@@ -42,7 +42,7 @@ public class Topic_05_Selenium_Text {
         // case text chứa khoảng trắng nhiều đầu cuối nên dùng contains(text):
         // case text có nháy đôi và đơn dùng concat
         String concatText = driver.findElement(By.xpath("//span[@class='concat']")).getText();
-        Assert.assertTrue(text.contains("Hello \"John\", What's happened?"));
+        Assert.assertTrue(concatText.contains("Hello \"John\", What's happened?"));
 
 
 

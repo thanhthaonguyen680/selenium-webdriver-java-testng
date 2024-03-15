@@ -15,11 +15,6 @@ public class Topic_02_Selenium_Locator {
     String osName = System.getProperty("os.name");
     @BeforeClass
     public void beforeClass() {
-        if (osName.contains("Windows")) {
-            System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
-        } else {
-            System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver");
-        }
 
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
