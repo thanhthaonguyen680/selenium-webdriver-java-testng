@@ -117,7 +117,7 @@ public class BasePage {
     public String getElementText(WebDriver driver, String xpathLocator){
         return getElement(driver, xpathLocator).getText();
     }
-    public void selectItemDefaultDropdowm(WebDriver driver,String xpathLocator, String textItem ){
+    public void selectItemDefaultDropdown(WebDriver driver,String xpathLocator, String textItem ){
         Select select = new Select(getElement(driver, xpathLocator));
         select.deselectByValue(textItem);
 
