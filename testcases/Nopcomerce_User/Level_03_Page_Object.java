@@ -111,7 +111,6 @@ public class Level_03_Page_Object extends BasePage {
     @Test
     public void TC_06_Register_Invalid_Confirm_Password() {
         homePage.clickToRegisterLink();
-        System.out.println("Step 02 Registerpage Input");
         registerPage.inputToFirstNameTextBox(firstName);
         registerPage.inputToLastNameTextBox(lastName);
         registerPage.inputToEmailTextBox(emailAddress);
